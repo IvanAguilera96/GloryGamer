@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+   
+}
+
+
+
+body{
+    
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: .1fr 2fr .2fr;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer"
+    ;
+    background-color: rgb(19, 78, 60);
+    
+}
+.active{
+    color: black;
+}
+
+header{
+    background-color: rgb(19, 78, 60);
+    grid-area: header;
+    
+   
+}
+header section h1{
+    width: 60vh;
+    font-size: 70px;
+    padding: 20px;
+    margin-left: 15vh;
+    text-decoration: underline;
+    
+}
+.div_header{
+    margin-right: 80px;
+    
+    
+}
+header section{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+.barra{
+    color: rgb(120, 178, 160); 
+    background-color: black;
+    font-size: 20px;
+ 
+}
+
+
+/* HEADER NAV */
+
+ a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* MAIN */
+main{
+    grid-area: main;
+    background-color: rgb(19, 78, 60) ;
+    
+}
+.img1{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}  
+
+.parrafo-inicio{
+    padding: 20px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+
+.img2{
+    margin-left: 1px;
+    width: 49.7%;
+    height: 600px;
+    border-radius: 10px;
+} 
+
+
+
+
+/* FOOTER */
+
+footer{
+    grid-area: footer;
+}
+
+.contenedor-footer{
+    display: flex;
+    background-color: rgb(19, 78, 60) ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 10px;
+
+}
+
+.footer-div{
+    width: 320px;
+    font-size: 25px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* PRIMER COLUMNA */
+footer section div h3{
+text-decoration: underline;
+font-weight: bold;
+font-size: 40px;
+margin-bottom: 10px;
+
+
+}
+footer section div p{
+    font-size: 20px;
+}
+
+/* SEGUNDA COLUMNA */
+
+.flex-title{
+    font-size: 40px ;
+    font-weight: bold;
+   
+}
+.flex-item{
+    padding: 5px 0;
+
+}
+.columna2-3{
+    margin-left: 50px;
+}
+.logo{
+    width: 100px;
+    height: 70px;
+    padding: 10px;
+}
+
+div .logo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+
+
+
+/* MAIN  "PRODUCTOS"*/
+
+#main-contenedor{
+    display: grid;
+    width: 100%;
+    background-color: #181a1b;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    justify-content: space-between;
+    
+  
+}
+.grid-productos{
+    height: 400px;
+    width: 300px;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 300px; 
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+
+.grid-img{
+    height: 400px;
+    width: 300px;
+   
+}
+
+/* MAIN GARANTIAS  */
+
+.title-garantia{
+    font-size: 40px;
+    padding: 10px 0;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.main-garantia{
+    text-align: center;
+    background-color: rgb(70, 67, 67);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif; 
+    border-radius: 80px;
+}
+
+.ul-garantia{
+    width: 95%;
+    margin-left: 40px;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.text-garantia{
+     list-style-type: circle;
+    font-size: 20px;
+     text-align: justify;
+     padding: 5px 0;
+} 
+
+/* MAIN  CONTACTOS */
+.body-contacto{
+    background-color: #181a1b;
+    color: black;
+}
+ .contactanos{
+    text-align: center;
+    padding:20px;
+    font-size: 30px;
+    border: 1px solid rgb(19, 78, 60) ;
+    
+    
+}
+.sectioncolor{
+    background-color: rgb(70, 67, 67);
+}
+.h6cont{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    text-decoration: underline;
+    
+}
+.pcont{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px
+
+}
+.main-contacto{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: #181a1b;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .8fr 1fr;
+    grid-template-areas: 
+    "section-mapa section-mapa"
+    "section-contacto section-form"
+    ;
+    border: 2px solid rgb(31, 37, 34);
+    padding: 10px 40px;
+    
+}
+
+.section-mapa{
+     grid-area: section-mapa;
+}
+
+.section-contacto{
+    grid-area: section-contacto;
+    padding: 25px;
+    border: 1px solid black;
+    width: 100%;
+   
+  
+
+}
+.section-form{
+    grid-area: section-form;
+    
+    
+}
+
+
+div iframe{
+    width: 100%;
+    border-radius: 10px;
+    
+    
+}
+fieldset legend{
+    font-size: 40px;
+    padding: 10px;
+    
+}
+
+
+
+.contacto-form{
+    width: 100%;
+    text-align: center;
+    background-color:rgb(70, 67, 67);
+    margin: auto;
+    padding: 25px;
+    font-size: 20px;
+    border: 7px double black;
+    
+}
+.formlabel{
+    display: block;
+    text-align: center;
+    
+
+    
+}
+.forminput{
+    width: 70%;
+    height: 30px;
+    background-color:  rgb(22, 68, 53);
+    font-size: 15px;
+}
+
+.p-formulario{
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+    
+}
+.flex-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    margin-left: 20px;
+
+}
+.enviar{
+   height: 30px;
+   background-color: rgb(22, 68, 53);
+   border: 1px solid black;
+ 
+   
+} 
+
+/* MAIN MIS PEDIDOS */
+.main-pedidos{
+    background-color: #181a1b ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+.form-pedidos{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(70, 67, 67);
+    margin: auto; 
+    
+    border: 5px double black;
+
+}
+
+form h5{
+    text-align: center;
+    margin: 50px;
+    font-size: 60px;
+    text-decoration: underline;
+}
+form p{
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+}
+.form-pedido-label{
+    display: block;
+    font-size: 30px;
+
+
+}
+.form-pedido-input{
+    width: 60%;
+    height: 35px;
+    background-color:rgb(22, 68, 53) ;
+    color: black;
+    font-size: 20px;
+
+}
+
+
+#buscarP{
+    margin-top: 50px;
+    font-size: 25px;
+    margin-bottom: 50px;
+    background-color:  rgb(22, 68, 53);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px){
+
+    body{
+        grid-template-columns:1fr;
+        grid-template-rows: .2fr .3fr .7fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ; 
+    }
+
+  
+    header section h1{
+        font-size: 40px;
+        padding: 10px 0px;
+        margin-left: 0;
+        text-align: center;    
+    }
+    .div_header{
+        margin-right: 0px;
+    }
+    header section{
+        flex-direction: row;
+        justify-content: center;  
+    }
+    .barra{
+        font-size: 15px;
+    }
+
+
+    .img1{
+        width: 100%;
+        height: 200px;
+    }  
+
+    .parrafo-inicio{ 
+        font-size: 18px; 
+    }
+
+
+    .img2{
+        
+        width: 100%;
+        height: 200px;
+        display: inline-block;
+    } 
+
+   
+
+
+
+
+
+
+
+
+
+   
+    .contenedor-footer{
+       
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        
+    }
+    
+    .footer-div{
+        width: 320px;
+        font-size: 20px; 
+    }
+    /* PRIMER COLUMNA */
+    footer section div h3{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    footer section div p{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    /* SEGUNDA COLUMNA */
+    
+    .flex-title{
+        font-size: 30px ;
+        font-weight: bold;
+        text-align: center;
+       
+       
+    }
+    .flex-item{
+        padding: 4px 0;
+        text-align: center;
+        
+    
+    }
+    .columna2-3{
+        margin:0;
+        padding: 0;
+    }
+    .logo{
+        width: 100px;
+        height: 80px;
+        padding: 10px 0;
+    }
+    
+    div .logo{
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+       
+    
+    }
+
+
+
+
+
+
+
+
+
+    
+     .contactanos{
+        font-size: 20px;  
+    }
+   
+    .h6cont{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .pcont{
+        font-size: 18px;
+    }
+    .main-contacto{
+        margin-bottom: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: .8fr .2fr .3fr;
+        grid-template-areas: 
+        "section-mapa"
+        "section-contacto"
+        "section-form"
+        ;
+        padding: 0;
+        
+    }
+    
+
+    
+    .section-contacto{
+        padding: 10px;
+    }
+    
+    
+    div iframe{
+        width: 100%;  
+    }
+    fieldset legend{
+        font-size: 30px;
+    }
+    
+    .contacto-form{
+        padding: 5px;
+        font-size: 18px;
+    }
+   
+    .forminput{
+        width: 80%;
+    }
+    .p-formulario{
+        width: 90%;
+        font-size: 10px;
+        padding:  20px 5px;   
+    }
+    
+}
