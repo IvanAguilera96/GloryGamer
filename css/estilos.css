@@ -24,7 +24,8 @@ body{
     
 }
 .active{
-    color: black;
+    color: black !important;
+
 }
 
 header{
