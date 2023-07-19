@@ -400,7 +400,7 @@ fieldset legend{
 
 
 
-/* MEDIA "1300" */
+                       /* MEDIA "1300" */
 
 
 @media (max-width: 1300px){
@@ -455,7 +455,7 @@ fieldset legend{
         align-items: center;
     }
 }
-/* MEDIA 1055 */
+                          /* MEDIA 1055 */
 @media (max-width: 1055px){
     body{
         display: block;   
@@ -470,7 +470,7 @@ fieldset legend{
     } 
 }
 
-/* MEDIA 1020 */
+                              /* MEDIA 1020 */
 @media (max-width: 1020px){
     
     .img-item{
@@ -513,7 +513,7 @@ fieldset legend{
     }
 }
 
-
+                                     /* MEDIA 768 */
 @media (max-width: 768px){
 
     header section h1{
@@ -564,37 +564,7 @@ fieldset legend{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                           /* MEDIA 480  */
 
 @media (max-width: 480px){
     
