@@ -101,11 +101,21 @@ main{
 
 
 .img2{
-    margin-left: 1px;
-    width: 49.7%;
-    height: 600px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+    
+  
 } 
+.img-item{
+    width: 49%;
+    border-radius: 10px;
+    height: 500px;
+   
+    
+}
 
 
 
@@ -166,7 +176,7 @@ footer section div p{
     padding: 10px;
 }
 
-div .logo{
+.redes-logo{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -230,10 +240,10 @@ div .logo{
     margin-top: 30px;
 }
 .text-garantia{
-     list-style-type: circle;
-    font-size: 20px;
-     text-align: justify;
-     padding: 5px 0;
+    list-style-type: circle;
+    font-size: 19px;
+    text-align: justify;
+    padding: 5px 0;
 } 
 
 /* MAIN  CONTACTOS */
@@ -363,62 +373,216 @@ fieldset legend{
    
 } 
 
-/* MAIN MIS PEDIDOS */
-.main-pedidos{
-    background-color: #181a1b ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+/* MAIN SOBRE NOSOTROS */
+.conteiner-nosotros{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Black-Alienware-Wallpaper-HD.jpg);
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  
+  
+   
+}
+
+.nosotros{
+  padding: 5px;
+  max-width: 70%;
+  font-size: 20px;
+  color: rgb(130, 187, 143);
+  
+}
+
+
+
+
+
+/* MEDIA "1300" */
+
+
+@media (max-width: 1300px){
+    body{
+        display: block;   
+    }
+
+
+    .img2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+       
+        
+      
+    } 
+    .img-item{
+ 
+        height: 450px; 
+    }
     
-}
-.form-pedidos{
-    width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color:rgb(70, 67, 67);
-    margin: auto; 
     
-    border: 5px double black;
-
-}
-
-form h5{
-    text-align: center;
-    margin: 50px;
-    font-size: 60px;
-    text-decoration: underline;
-}
-form p{
-    text-align: center;
-    font-size: 30px;
-    padding: 30px;
-}
-.form-pedido-label{
-    display: block;
-    font-size: 30px;
-
-
-}
-.form-pedido-input{
-    width: 60%;
-    height: 35px;
-    background-color:rgb(22, 68, 53) ;
-    color: black;
-    font-size: 20px;
-
-}
-
-
-#buscarP{
-    margin-top: 50px;
-    font-size: 25px;
-    margin-bottom: 50px;
-    background-color:  rgb(22, 68, 53);
     
+    .contenedor-footer{
+        justify-content:space-between;
+        text-align:center;
+        padding: 10px;
+    }
+    .footer-div{
+        width: 500px;
+        font-size: 23px;  
+    }
+    /* PRIMER COLUMNA */
+    footer section div h3{
+    margin-bottom: 5px;
+    }
+    footer section div p{
+        font-size: 20px;
+        margin: 0;
+    }
+    
+    /* SEGUNDA COLUMNA */
+    .flex-title{
+        font-size: 30px; 
+    }
+    .columna2-3{
+        margin: auto;
+        padding: 0 30px;
+    }
+    .redes-logo{
+        align-items: center;
+    }
 }
+/* MEDIA 1055 */
+@media (max-width: 1055px){
+    body{
+        display: block;   
+    }
+    .carousel-img{
+        height: 350px;
+        border-radius: 10px;
+    }
+
+    .img-item{
+        height: 350px;
+    } 
+}
+
+/* MEDIA 1020 */
+@media (max-width: 1020px){
+    
+    .img-item{
+ 
+        height: 400px; 
+    }
+    
+
+    header section h1{
+        font-size: 60px;
+        padding: 10px 0px;
+        margin-left: 0;
+        text-align: center;    
+    }
+    .div_header{
+        margin-right: 0px;
+    }
+    header section{
+        flex-direction: row;
+        justify-content: center;  
+    }
+    .barra{
+        font-size: 15px;
+    }
+
+    .parrafo-inicio{ 
+        font-size: 25px; 
+    }
+
+
+    .contenedor-footer{
+        justify-content:space-around;
+        text-align:center;
+        padding: 10px;
+    }
+
+    .footer-div{
+        width: 350px;
+          
+    }
+}
+
+
+@media (max-width: 768px){
+
+    header section h1{
+        font-size: 60px;
+        padding: 10px 0px;
+        margin-left: 0;
+        text-align: center;    
+    }
+    .div_header{
+        margin-right: 0px;
+    }
+    header section{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .carousel-img{
+        width: 100%;
+        height: 280px;
+    }  
+
+}
+
+@media (max-width: 723px){
+
+    .img2{
+       
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       
+        
+      
+    } 
+    .img-item{
+        width: 90%;
+        border-radius: 10px;
+        height: 250px;
+        margin: 1px;
+       
+        
+    }
+    .parrafo-inicio{ 
+        font-size: 18px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -433,17 +597,13 @@ form p{
 
 
 @media (max-width: 480px){
+    
 
     body{
-        grid-template-columns:1fr;
-        grid-template-rows: .2fr .3fr .7fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer"
-        ; 
-    }
-
+        
+        display: block;
+       
+      }
   
     header section h1{
         font-size: 40px;
@@ -473,16 +633,13 @@ form p{
     }
 
 
-    .img2{
+    .img-item{
         
-        width: 100%;
+        width: 90%;
         height: 200px;
-        display: inline-block;
+        flex-direction: column;
+        margin: 1px;
     } 
-
-   
-
-
    
     .contenedor-footer{
        
@@ -524,8 +681,8 @@ form p{
     }
     
     .columna2-3{
-        margin:0;
-        padding: 0;
+        display: none;
+       
     }
     .logo{
         width: 100px;
@@ -533,7 +690,7 @@ form p{
         padding: 10px 0;
     }
     
-    div .logo{
+    .redes-logo{
         
         display: flex;
         flex-direction: column;
@@ -544,15 +701,7 @@ form p{
        
     
     }
-
-
-
-
-
-
-
-
-
+     /* CONTACTANOS */
     
      .contactanos{
         font-size: 20px;  
@@ -577,8 +726,6 @@ form p{
         padding: 0;
         
     }
-    
-
     
     .section-contacto{
         padding: 10px;
