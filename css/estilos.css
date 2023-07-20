@@ -251,30 +251,6 @@ footer section div p{
     background-color: #181a1b;
     color: black;
 }
- .contactanos{
-    text-align: center;
-    padding:20px;
-    font-size: 30px;
-    border: 1px solid rgb(19, 78, 60) ;
-    
-    
-}
-.sectioncolor{
-    background-color: rgb(70, 67, 67);
-}
-.h6cont{
-    text-align: center;
-    font-size: 25px;
-    padding: 10px;
-    text-decoration: underline;
-    
-}
-.pcont{
-    text-align: center;
-    padding: 5px;
-    font-size: 20px
-
-}
 .main-contacto{
     width: 80%;
     margin: auto;
@@ -292,26 +268,9 @@ footer section div p{
     padding: 10px 40px;
     
 }
-
 .section-mapa{
-     grid-area: section-mapa;
+    grid-area: section-mapa;
 }
-
-.section-contacto{
-    grid-area: section-contacto;
-    padding: 25px;
-    border: 1px solid black;
-    width: 100%;
-   
-  
-
-}
-.section-form{
-    grid-area: section-form;
-    
-    
-}
-
 
 div iframe{
     width: 100%;
@@ -319,10 +278,40 @@ div iframe{
     
     
 }
-fieldset legend{
-    font-size: 40px;
-    padding: 10px;
+.section-contacto{
+   grid-area: section-contacto;
+   padding: 25px;
+   border: 1px solid black;
+   width: 100%;
+  
+ 
+
+}
+.section-form{
+   grid-area: section-form;
+   
+   
+}
+ .contactanos{
+    text-align: center;
+    padding:20px;
+    font-size: 30px;
+    border: 1px solid rgb(19, 78, 60) ;
     
+    
+}
+.h6cont{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    text-decoration: underline;
+    
+}
+.pcont{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px
+
 }
 
 
@@ -337,6 +326,16 @@ fieldset legend{
     border: 7px double black;
     
 }
+
+
+
+fieldset legend{
+    font-size: 40px;
+    padding: 10px;
+    
+}
+
+
 .formlabel{
     display: block;
     text-align: center;
@@ -350,13 +349,6 @@ fieldset legend{
     background-color:  rgb(22, 68, 53);
     font-size: 15px;
 }
-
-.p-formulario{
-    width: 90%;
-    font-size: 14px;
-    padding: 10px;
-    
-}
 .flex-form{
     display: flex;
     flex-direction: row;
@@ -365,6 +357,13 @@ fieldset legend{
     margin-left: 20px;
 
 }
+.p-formulario{
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+    
+}
+
 .enviar{
    height: 30px;
    background-color: rgb(22, 68, 53);
@@ -373,15 +372,16 @@ fieldset legend{
    
 } 
 
-/* MAIN SOBRE NOSOTROS */
+/* MAIN  NOSOTROS */
 .conteiner-nosotros{
   display: flex;
   justify-content:center;
   align-items: center;
-  background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Black-Alienware-Wallpaper-HD.jpg);
+  background-image: url(../assets/images/redes/alien1500px.jpg);
   background-size: auto;
   background-position: center center;
   background-repeat: no-repeat;
+  background-color: black;
   
   
   
@@ -392,7 +392,8 @@ fieldset legend{
   padding: 5px;
   max-width: 70%;
   font-size: 20px;
-  color: rgb(130, 187, 143);
+  color: rgb(10, 219, 114);
+  
   
 }
 
@@ -454,8 +455,16 @@ fieldset legend{
     .redes-logo{
         align-items: center;
     }
+
+    /* MAIN NOSOTROS */
+
+  
+  
+
+
+
 }
-                          /* MEDIA 1055 */
+                          /* MEDIA 1066 */
 @media (max-width: 1066px){
     body{
         display: block;   
@@ -467,7 +476,61 @@ fieldset legend{
     .img-item{
         height: 350px;
     } 
+
+    /* MAIN  CONTACTOS */
+
+.main-contacto{
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: .7fr .7fr .3fr;
+    grid-template-areas: 
+    "section-mapa section-mapa section-mapa"
+    ". section-contacto ."
+    ". section-form ."
+    ;
 }
+.section-contacto{
+   
+   padding: 15px;
+   border: none;
+}
+
+ .contactanos{
+    padding:15px; 
+}
+.h6cont{
+    padding: 5px;
+}
+
+
+
+
+fieldset legend{
+    font-size: 35px;  
+}
+
+
+
+.forminput{
+    width: 90%;
+   
+}
+.flex-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    margin-left: 20px;
+
+}
+.p-formulario{
+    font-size: 10px;
+    padding: 5px;
+    
+}
+}  
+
+
+
                               /* MEDIA 1020 */
 @media (max-width: 1020px){
     
@@ -509,6 +572,19 @@ fieldset legend{
         width: 350px;
           
     }
+    /* MAIN NOSOTROS */
+    .conteiner-nosotros{
+        background-image:url(../assets/images/redes/aliens1000px.jpg);
+         
+      }
+      
+    .nosotros{
+        padding: 5px;
+        max-width: 85%;
+        font-size: 15px;
+        color: rgb(10, 219, 114);
+    
+  }
 }
 
                                          /* MEDIA 768 */
@@ -533,8 +609,70 @@ fieldset legend{
         height: 280px;
     }  
 
+
+                          /* MAIN CONTACTO */
+
+
+.main-contacto{
+    width: 90%;
+    display: block;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    grid-template-areas: none;
+    
 }
 
+
+.section-contacto{
+   padding: 25px;
+   border: none;
+
+}
+
+ .contactanos{
+    padding:20px;
+    font-size: 23px;  
+}
+.h6cont{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: underline;
+    
+}
+.pcont{
+    padding: 3px;
+    font-size: 17px
+
+}
+fieldset legend{
+    font-size: 30px;
+   
+    
+}
+
+
+.formlabel{
+    display: block;
+    text-align: center;
+    font-size: 17px;
+
+    
+}
+.forminput{
+    width: 70%;
+    height: 25px;
+   
+}
+
+.enviar{
+   height: 25px;
+   font-size: 15px;
+ 
+} 
+
+}
+                            /* MEDIA 723 */
 @media (max-width: 723px){
 
     .img2{
@@ -559,6 +697,8 @@ fieldset legend{
         font-size: 18px; 
     }
 }
+
+
 
 
 
@@ -692,6 +832,7 @@ fieldset legend{
         "section-form"
         ;
         padding: 0;
+       
         
     }
     
