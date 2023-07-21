@@ -194,7 +194,8 @@ footer section div p{
     background-color: #181a1b;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(9, 1fr);
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     
   
 }
@@ -458,12 +459,33 @@ fieldset legend{
 
     /* MAIN NOSOTROS */
 
-  
-  
-
-
-
+                          /* MEDIA 1200 */
 }
+@media (max-width: 1200px){
+#main-contenedor{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(18, 1fr);
+}
+    
+
+.grid-productos{                                                                      
+        margin: 0 auto;
+        font-size: 35px;
+        grid-column: 1/4;    }
+   
+}
+.grid-item{
+    margin: auto;
+}
+
+.grid-img{
+    height: 350px;
+    width: 250px;
+}
+
+
+
+
                           /* MEDIA 1066 */
 @media (max-width: 1066px){
     body{
@@ -533,11 +555,8 @@ fieldset legend{
 
                               /* MEDIA 1020 */
 @media (max-width: 1020px){
-    
-    .img-item{
- 
-        height: 400px; 
-    }
+                    /* INDEX */
+   
     
 
     header section h1{
@@ -560,7 +579,7 @@ fieldset legend{
     .parrafo-inicio{ 
         font-size: 25px; 
     }
-
+   
 
     .contenedor-footer{
         justify-content:space-around;
@@ -609,7 +628,31 @@ fieldset legend{
         height: 280px;
     }  
 
+                                /* MAIN PRODUCTOS */
 
+    #main-contenedor{
+        display: block;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        justify-content:none;
+        align-items:none;
+    
+}
+    .grid-productos{
+        height: 200px;
+        width: 100%;
+        margin: auto;
+        line-height: 200px; 
+        font-size: 25px;
+
+}
+    .grid-item{
+        text-align: center;
+    }
+    .grid-img{
+        height: 300px;
+        width: 200px;
+}
                           /* MAIN CONTACTO */
 
 
