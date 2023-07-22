@@ -198,7 +198,7 @@ footer section div p{
     line-height: 300px; 
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    color: rgb(10, 219, 114);
 }
 
 
@@ -212,30 +212,35 @@ footer section div p{
 
 .title-garantia{
     font-size: 40px;
-    padding: 10px 0;
+    padding: 30px 0;
     text-decoration: underline;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 .main-garantia{
     text-align: center;
-    background-color: rgb(70, 67, 67);
-    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif; 
-    border-radius: 80px;
+    background-image: url(../assets/images/redes/Wallpaper-1920x1080-px\,-black-background\,-Microsoft-.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(74, 195, 206);
+    
 }
 
 .ul-garantia{
     width: 95%;
     margin-left: 40px;
-    padding: 20px 0;
+    padding: 20px 30px;
     margin-top: 30px;
+    
+    
 }
 .text-garantia{
     list-style-type: circle;
     font-size: 19px;
     text-align: justify;
     padding: 5px 0;
+    
 } 
 
 /* MAIN  CONTACTOS */
@@ -289,6 +294,7 @@ div iframe{
     padding:20px;
     font-size: 30px;
     border: 1px solid rgb(19, 78, 60) ;
+    color: rgb(10, 219, 114);
     
     
 }
@@ -297,12 +303,15 @@ div iframe{
     font-size: 25px;
     padding: 10px;
     text-decoration: underline;
+    color: rgb(10, 219, 114);
+    
     
 }
 .pcont{
     text-align: center;
     padding: 5px;
-    font-size: 20px
+    font-size: 20px;
+    color: rgb(10, 219, 114);
 
 }
 
@@ -375,6 +384,8 @@ fieldset legend{
   background-repeat: no-repeat;
   background-color: black;
   
+
+  
   
   
    
@@ -385,7 +396,7 @@ fieldset legend{
   max-width: 70%;
   font-size: 20px;
   color: rgb(10, 219, 114);
-  
+  background-color: rgba(0, 0, 0, 0.7);
   
 }
 
