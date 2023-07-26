@@ -1,0 +1,194 @@
+footer{
+    grid-area: footer;
+
+    .contenedor-footer{
+        display: flex;
+        background-color: rgb(19, 78, 60) ;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        padding: 10px;
+
+        @include desktop1300 {
+            justify-content:space-between;
+            text-align:center;
+           
+        }
+
+        @include desktop1020 {
+            justify-content:space-around;
+            text-align:center;
+            padding: 10px;
+        }
+
+        @include movile480 {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+        }
+
+        .footer-div{
+            width: 320px;
+            font-size: 25px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            @include desktop1300 {
+                width: 500px;
+                font-size: 23px;  
+            }
+
+            @include desktop1020 {
+                width: 350px;
+            }
+
+            @include movile480 {
+                width: 320px;
+                font-size: 20px; 
+            }
+
+            h3{
+                text-decoration: underline;
+                font-weight: bold;
+                font-size: 40px;
+                margin-bottom: 10px;
+
+                @include desktop1300 {
+                    margin-bottom: 5px;
+                }
+
+                @include movile480 {
+                    text-align: center;
+                    font-size: 30px;
+                    margin-bottom: 0; 
+                }
+
+            }
+            p{
+                font-size: 20px;
+                
+                @include desktop1300 {
+                    font-size: 20px;
+                    margin: 0;
+                }
+
+                @include movile480 {
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+        }
+        .footer-div{
+            width: 320px;
+            font-size: 25px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            .columna2-3{
+                margin-left: 50px;
+
+                @include desktop1300{
+                    margin: auto;
+                    padding: 0 30px;
+                }
+                @include movile480 {
+                    display: none;
+                }
+                
+                .flex-title{
+                    font-size: 40px ;
+                    font-weight: bold;
+
+                    @include desktop1300{
+                        font-size: 30px; 
+                    }
+                    @include movile480 {
+                        font-size: 30px ;
+                        font-weight: bold;
+                        text-align: center;
+       
+                    }
+
+                }
+                .flex-item{
+                    padding: 5px 0;
+
+                    a{
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+
+        }
+        .footer-div{
+            width: 320px;
+            font-size: 25px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            .columna2-3{
+                margin-left: 50px;
+
+                @include desktop1300{
+                    margin: auto;
+                    padding: 0 30px;
+                }
+                @include movile480 {
+                    display: none;
+                }
+                
+                .flex-title{
+                    font-size: 40px ;
+                    font-weight: bold;
+
+                    @include desktop1300{
+                        font-size: 30px; 
+                    }
+                    @include movile480 {
+                        font-size: 30px ;
+                        font-weight: bold;
+                        text-align: center;
+       
+                    }
+
+                }
+                .flex-item{
+                    padding: 5px 0;
+
+                    @include movile480 {
+                        padding: 4px 0;
+                        text-align: center;
+                    }
+                }
+
+            }
+        }
+        .footer-div{
+            width: 320px;
+            font-size: 25px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            .flex-title{
+                font-size: 40px ;
+                font-weight: bold;
+
+                @include desktop1300{
+                    font-size: 30px; 
+                }
+                @include movile480 {
+                    font-size: 30px ;
+                    font-weight: bold;
+                    text-align: center;
+   
+                }
+            }
+           
+
+        }
+    }
+
+}

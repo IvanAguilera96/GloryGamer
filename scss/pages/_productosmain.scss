@@ -1,0 +1,78 @@
+
+
+main{
+
+    .main-contenedor{
+        display: grid;
+        width: 100%;
+        background-color: #181a1b;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        justify-content: center;
+        align-items: center;
+
+        @include desktop1200{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(18, 1fr);
+        }
+
+        @include table768 {
+            display: block;
+            grid-template-columns: none;
+            grid-template-rows: none;
+            justify-content:none;
+            align-items:none;
+        }
+
+        .grid-productos{
+            height: 400px;
+            width: 300px;
+            margin: 30px auto;
+            text-align: center;
+            line-height: 300px; 
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(10, 219, 114);
+
+            @include desktop1200{
+                margin: 0 auto;
+                font-size: 35px;
+                grid-column: 1/4;   
+            }
+
+            @include table768 {
+                height: 200px;
+                width: 100%;
+                margin: auto;
+                line-height: 200px; 
+                font-size: 25px;
+            }
+        }
+        
+        .grid-item{
+
+            @include table768 {
+                text-align: center;
+            }
+
+            .grid-img{
+                height: 400px;
+                width: 300px;
+    
+                @include desktop1200{
+                    height: 350px;
+                    width: 250px;
+                }
+
+                @include table768 {
+                    height: 300px;
+                    width: 200px;
+                }
+       
+            }
+        }
+        
+        
+    }    
+
+}

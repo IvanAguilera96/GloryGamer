@@ -1,0 +1,41 @@
+// carpeta utilidades
+@import "./utilidades/variables";
+@import "./utilidades/mixins";
+
+//   carpeta base
+
+@import "./base/reset";
+@import "./base/body";
+
+// carpeta layout
+@import "./layout/header";
+@import "./layout/footer";
+
+
+// carpeta pages
+@import "./pages/indexmain";
+@import "./pages/productosmain";
+@import "./pages/garantiasmain";
+@import "./pages/nosotrosmain";
+@import "./pages/contactomain";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

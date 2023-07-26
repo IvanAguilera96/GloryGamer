@@ -1,0 +1,45 @@
+
+@mixin desktop1300 {
+    @media screen and (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin desktop1200 {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin desktop1066 {
+    @media screen and (max-width: 1066px) {
+        @content;
+    }
+}
+
+
+@mixin desktop1020 {
+    @media screen and (max-width: 1020px) {
+        @content;
+    }
+}
+
+
+@mixin table768 {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin table723 {
+    @media screen and (max-width: 723px) {
+        @content;
+    }
+}
+
+
+@mixin movile480 {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}

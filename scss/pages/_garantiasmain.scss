@@ -1,0 +1,53 @@
+
+
+
+.main-garantia{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+    background-image: url(../../assets/images/redes/luigi1.jpg);
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: rgb(190, 200, 201);
+    background-color: black;
+
+    @include desktop1020 {
+        background-image: url(../../assets/images/redes/luigi2.jpg);
+        
+    }
+
+    @include movile480 {
+        background-image: url(../../assets/images/redes/luig3.jpg);
+    }
+
+    .title-garantia{
+        font-size: 40px;
+        padding: 30px 0;
+        text-decoration: underline;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+    }
+
+    .ul-garantia{
+        max-width: 95%;
+        margin-left: 40px;
+        padding: 20px 30px;
+        margin-top: 30px;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin: auto;
+        
+        .text-garantia{
+            list-style-type: circle;
+            font-size: 19px;
+            text-align: justify;
+            padding: 5px 0;
+
+            @include desktop1020 {
+                
+                font-size: 15px;
+                text-align: justify;
+                padding: 5px 0;
+            }
+        }
+    }
+}

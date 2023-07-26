@@ -1,0 +1,78 @@
+
+
+
+
+header{
+    background-color: rgb(19, 78, 60);
+    grid-area: header;
+    
+    section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+
+        @include desktop1020 {
+            justify-content: center;
+        }
+
+         h1{
+            width: 60vh;
+            font-size: 70px;
+            padding: 20px;
+            margin-left: 15vh;
+            text-decoration: underline;
+
+            @include desktop1020 {
+                font-size: 60px;
+                padding: 10px 0px;
+                margin-left: 0;
+                text-align: center; 
+            }
+
+            @include table768 {
+                font-size: 60px;
+                padding: 10px 0px;
+                margin-left: 0;
+                text-align: center;
+            }
+            
+        }
+        .div_header{
+            margin-right: 80px;
+
+            @include desktop1020 {
+                margin-right: 0px; 
+            }
+
+            .barra{
+                color: rgb(120, 178, 160); 
+                background-color: black;
+                font-size: 20px;
+
+                @include desktop1020 {
+                    font-size: 15px;
+                }
+             
+            }
+            
+        }
+    }
+    nav{  
+
+       a{
+            color: black;
+            text-decoration: none;
+         &:hover{
+                transform: scale(1.2);
+                background: $color-principal;
+                border-radius: 20px;
+                color: black;
+            }
+        }
+            
+    }
+   
+}
+    

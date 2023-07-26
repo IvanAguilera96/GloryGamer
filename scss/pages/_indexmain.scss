@@ -1,0 +1,118 @@
+
+
+main{
+    grid-area: main;
+    background-color: rgb(19, 78, 60) ;
+    
+    div{
+        .carousel-img{
+            height: 450px;
+            border-radius: 10px;
+
+            @include desktop1066 {
+                height: 350px;
+                border-radius: 10px;
+            }
+
+            @include table768 {
+                width: 100%;
+                height: 280px;
+            }
+
+            @include movile480 {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+
+    .parrafo-inicio{
+        padding: 20px;
+        font-size: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+
+        @include desktop1020 {
+            font-size: 25px;
+        }
+
+        @include table723 {
+            font-size: 18px;
+        }
+
+        @include movile480 {
+            font-size: 18px;
+        }
+    }
+
+    .img2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        @include table723 {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;   
+        }
+        
+        .img-item{
+            width: 49%;
+            border-radius: 10px;
+            height: 500px;
+            
+            @include desktop1300 {
+                height: 450px; 
+            }
+
+            @include desktop1066 {
+                height: 350px;
+            }
+
+            @include table723 {
+                width: 90%;
+                border-radius: 10px;
+                height: 250px;
+                margin: 1px;;   
+            }
+
+            @include movile480 {
+                width: 90%;
+                height: 200px;
+                flex-direction: column;
+                margin: 1px;
+            }
+
+        }
+
+        .img-item{
+            width: 49%;
+            border-radius: 10px;
+            height: 500px;
+            
+            @include desktop1300 {
+                height: 450px; 
+            }
+
+            @include desktop1066 {
+                height: 350px;
+            }
+
+            @include table723 {
+                width: 90%;
+                border-radius: 10px;
+                height: 250px;
+                margin: 1px;;   
+            }
+
+            @include movile480 {
+                width: 90%;
+                height: 200px;
+                flex-direction: column;
+                margin: 1px;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+
+
+.conteiner-nosotros{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-image: url(../assets/images/redes/alien1500px.jpg);
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+
+    @include desktop1066 {
+        background-image:url(../../assets/images/redes/aliens1000px.jpg);
+    }
+
+    .nosotros{
+        padding: 5px;
+        max-width: 70%;
+        font-size: 20px;
+        color: rgb(10, 219, 114);
+        background-color: rgba(0, 0, 0, 0.7);
+
+        @include desktop1020 {
+            padding: 5px;
+            max-width: 85%;
+            font-size: 15px;
+            color: rgb(10, 219, 114);
+        }
+    }
+
+}
