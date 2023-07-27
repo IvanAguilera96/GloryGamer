@@ -48,7 +48,39 @@ main{
                 font-size: 25px;
             }
         }
+        #procesador{
+            height: 400px;
+            width: 300px;
+            margin: 30px auto;
+            text-align: center;
+            line-height: 300px; 
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(10, 219, 114);
+        }
         
+        #placas{
+            height: 400px;
+            width: 300px;
+            margin: 30px auto;
+            text-align: center;
+            line-height: 300px; 
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(10, 219, 114);
+        }
+
+        #monitores{
+            height: 400px;
+            width: 300px;
+            margin: 30px auto;
+            text-align: center;
+            line-height: 300px; 
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(10, 219, 114);
+        }
+
         .grid-item{
 
             @include table768 {

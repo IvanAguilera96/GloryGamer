@@ -50,9 +50,11 @@ header{
             }
 
             .barra{
-                color: rgb(120, 178, 160); 
+                color: $color-violet; 
                 background-color: black;
                 font-size: 20px;
+                border-radius: 10px;
+                border: 2px $color-green solid;
 
                 @include desktop1020 {
                     font-size: 15px;

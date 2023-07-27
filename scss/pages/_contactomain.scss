@@ -1,7 +1,7 @@
 
 
 .body-contacto{
-    background-color: #181a1b;
+    background-color: $color-fondo;
     color: black;
 
     .main-contacto{
@@ -17,7 +17,7 @@
         "section-mapa section-mapa"
         "section-contacto section-form"
         ;
-        border: 2px solid rgb(31, 37, 34);
+        border: 2px solid $color-fondo;
         padding: 10px 40px;
 
         @include desktop1066 {
@@ -69,7 +69,7 @@
         .section-contacto{
             grid-area: section-contacto;
             padding: 25px;
-            border: 1px solid black;
+            border: 1px solid $color-violet;
             width: 100%;
 
             @include desktop1066 {
@@ -90,7 +90,7 @@
                 text-align: center;
                 padding:20px;
                 font-size: 30px;
-                border: 1px solid rgb(19, 78, 60) ;
+                border: 1px solid $color-violet ;
                 color: rgb(10, 219, 114);
 
                 @include desktop1066 {
@@ -166,7 +166,7 @@
                 margin: auto;
                 padding: 25px;
                 font-size: 20px;
-                border: 7px double black;
+                border: 7px double $color-fondo;
 
                 @include movile480{
                     padding: 5px;

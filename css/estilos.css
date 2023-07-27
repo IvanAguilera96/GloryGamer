@@ -70,9 +70,11 @@ header section .div_header {
   }
 }
 header section .div_header .barra {
-  color: rgb(120, 178, 160);
+  color: rgb(107, 66, 195);
   background-color: black;
   font-size: 20px;
+  border-radius: 10px;
+  border: 2px rgb(10, 219, 114) solid;
 }
 @media screen and (max-width: 1020px) {
   header section .div_header .barra {
@@ -475,6 +477,36 @@ main .main-contenedor .grid-productos {
     font-size: 25px;
   }
 }
+main .main-contenedor #procesador {
+  height: 400px;
+  width: 300px;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 300px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(10, 219, 114);
+}
+main .main-contenedor #placas {
+  height: 400px;
+  width: 300px;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 300px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(10, 219, 114);
+}
+main .main-contenedor #monitores {
+  height: 400px;
+  width: 300px;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 300px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(10, 219, 114);
+}
 @media screen and (max-width: 768px) {
   main .main-contenedor .grid-item {
     text-align: center;
@@ -577,7 +609,7 @@ main .main-contenedor .grid-item .grid-img {
 }
 
 .body-contacto {
-  background-color: #181a1b;
+  background-color: rgb(4, 9, 6);
   color: black;
 }
 .body-contacto .main-contacto {
@@ -590,7 +622,7 @@ main .main-contenedor .grid-item .grid-img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.8fr 1fr;
   grid-template-areas: "section-mapa section-mapa" "section-contacto section-form";
-  border: 2px solid rgb(31, 37, 34);
+  border: 2px solid rgb(4, 9, 6);
   padding: 10px 40px;
 }
 @media screen and (max-width: 1066px) {
@@ -633,7 +665,7 @@ main .main-contenedor .grid-item .grid-img {
 .body-contacto .main-contacto .section-contacto {
   grid-area: section-contacto;
   padding: 25px;
-  border: 1px solid black;
+  border: 1px solid rgb(107, 66, 195);
   width: 100%;
 }
 @media screen and (max-width: 1066px) {
@@ -657,7 +689,7 @@ main .main-contenedor .grid-item .grid-img {
   text-align: center;
   padding: 20px;
   font-size: 30px;
-  border: 1px solid rgb(19, 78, 60);
+  border: 1px solid rgb(107, 66, 195);
   color: rgb(10, 219, 114);
 }
 @media screen and (max-width: 1066px) {
@@ -729,7 +761,7 @@ main .main-contenedor .grid-item .grid-img {
   margin: auto;
   padding: 25px;
   font-size: 20px;
-  border: 7px double black;
+  border: 7px double rgb(4, 9, 6);
 }
 @media screen and (max-width: 480px) {
   .body-contacto .main-contacto .section-form .contacto-form {
