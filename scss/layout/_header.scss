@@ -5,6 +5,7 @@
 header{
     background-color: rgb(19, 78, 60);
     grid-area: header;
+    background-color: $color-fondo;
     
     section{
         display: flex;
@@ -23,6 +24,8 @@ header{
             padding: 20px;
             margin-left: 15vh;
             text-decoration: underline;
+            color: $color-green;
+            
 
             @include desktop1020 {
                 font-size: 60px;
@@ -63,12 +66,15 @@ header{
 
        a{
             color: black;
+            color:$color-violet !important;
             text-decoration: none;
+            
          &:hover{
                 transform: scale(1.2);
-                background: $color-principal;
+                background-color: rgb(13, 21, 11);
                 border-radius: 20px;
                 color: black;
+                
             }
         }
             

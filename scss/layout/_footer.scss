@@ -4,6 +4,7 @@ footer{
     .contenedor-footer{
         display: flex;
         background-color: rgb(19, 78, 60) ;
+        background-color: $color-fondo;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:space-around;
@@ -33,6 +34,7 @@ footer{
             font-size: 25px;
             padding: 10px;
             font-family: Arial, Helvetica, sans-serif;
+            color: $color-green;
 
             @include desktop1300 {
                 width: 500px;
@@ -53,6 +55,7 @@ footer{
                 font-weight: bold;
                 font-size: 40px;
                 margin-bottom: 10px;
+                color: $color-green;
 
                 @include desktop1300 {
                     margin-bottom: 5px;
@@ -67,7 +70,7 @@ footer{
             }
             p{
                 font-size: 20px;
-                
+                color: rgb(255, 255, 255);
                 @include desktop1300 {
                     font-size: 20px;
                     margin: 0;
@@ -84,6 +87,7 @@ footer{
             font-size: 25px;
             padding: 10px;
             font-family: Arial, Helvetica, sans-serif;
+            color: $color-green;
 
             .columna2-3{
                 margin-left: 50px;
@@ -113,10 +117,12 @@ footer{
                 }
                 .flex-item{
                     padding: 5px 0;
+                    color: rgb(255, 255, 255);
 
                     a{
                         color: black;
                         text-decoration: none;
+                        color: rgb(255, 255, 255);
                     }
                 }
 
@@ -128,6 +134,7 @@ footer{
             font-size: 25px;
             padding: 10px;
             font-family: Arial, Helvetica, sans-serif;
+            color: $color-green;
 
             .columna2-3{
                 margin-left: 50px;
@@ -171,10 +178,12 @@ footer{
             font-size: 25px;
             padding: 10px;
             font-family: Arial, Helvetica, sans-serif;
+            
 
             .flex-title{
                 font-size: 40px ;
                 font-weight: bold;
+                color: $color-green;
 
                 @include desktop1300{
                     font-size: 30px; 

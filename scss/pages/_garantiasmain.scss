@@ -4,20 +4,20 @@
 .main-garantia{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif; 
-    background-image: url(../../assets/images/redes/luigi1.jpg);
+    background-image: url(../assets/images/redes/luigi1.jpg);
     background-size: auto;
     background-position: center center;
     background-repeat: no-repeat;
-    color: rgb(190, 200, 201);
+    color: rgb(30, 172, 56);
     background-color: black;
 
     @include desktop1020 {
-        background-image: url(../../assets/images/redes/luigi2.jpg);
+        background-image: url(../assets/images/redes/luigi2.jpg);
         
     }
 
     @include movile480 {
-        background-image: url(../../assets/images/redes/luig3.jpg);
+        background-image: url(../assets/images/redes/luig3.jpg);
     }
 
     .title-garantia{
