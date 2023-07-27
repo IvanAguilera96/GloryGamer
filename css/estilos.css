@@ -487,6 +487,22 @@ main .main-contenedor #procesador {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(10, 219, 114);
 }
+@media screen and (max-width: 1200px) {
+  main .main-contenedor #procesador {
+    margin: 0 auto;
+    font-size: 35px;
+    grid-column: 1/4;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .main-contenedor #procesador {
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    line-height: 200px;
+    font-size: 25px;
+  }
+}
 main .main-contenedor #placas {
   height: 400px;
   width: 300px;
@@ -497,6 +513,22 @@ main .main-contenedor #placas {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(10, 219, 114);
 }
+@media screen and (max-width: 1200px) {
+  main .main-contenedor #placas {
+    margin: 0 auto;
+    font-size: 35px;
+    grid-column: 1/4;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .main-contenedor #placas {
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    line-height: 200px;
+    font-size: 25px;
+  }
+}
 main .main-contenedor #monitores {
   height: 400px;
   width: 300px;
@@ -506,6 +538,27 @@ main .main-contenedor #monitores {
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(10, 219, 114);
+}
+@media screen and (max-width: 1200px) {
+  main .main-contenedor #monitores {
+    margin: 0 auto;
+    font-size: 35px;
+    grid-column: 1/4;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .main-contenedor #monitores {
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    line-height: 200px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .main-contenedor .grid-item {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 768px) {
   main .main-contenedor .grid-item {
