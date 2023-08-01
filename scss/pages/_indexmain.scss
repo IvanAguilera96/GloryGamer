@@ -33,6 +33,7 @@ main{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-align: center;
         color: $color-green;
+        
 
         @include desktop1020 {
             font-size: 25px;
@@ -59,62 +60,110 @@ main{
             justify-content: center;
             align-items: center;   
         }
+
+        .conteiner-img{
+            position: relative;
+            width: 49%;
+            height: 500px;
+
+            @include desktop1066 {
+                height: 350px;
+            }
+            
+
+            .img-item{
+                width: 100%;
+                border-radius: 10px;
+                height: 500px;
+                
+                @include desktop1300 {
+                    height: 450px; 
+                }
+    
+                @include desktop1066 {
+                    height: 350px;
+                }
+    
+                @include table723 {
+                    width: 90%;
+                    border-radius: 10px;
+                    height: 250px;
+                    margin: 1px;;   
+                }
+    
+                @include movile480 {
+                    width: 90%;
+                    height: 200px;
+                    flex-direction: column;
+                    margin: 1px;
+                }
+    
+            }
+
+            .img-titulo{
+                position: absolute;
+                top: 50%;
+                left: 50%; 
+                background-color: rgba(190, 228, 197, 0.7);
+                padding: 5px 10px; 
+                font-size: 46px; 
+                font-weight: bold; 
+                border-radius: 5px; 
+                transform: translate(-50%,-50%);
+            }
+        }
         
-        .img-item{
+        .conteiner-img{
+            position: relative;
             width: 49%;
-            border-radius: 10px;
             height: 500px;
-            
-            @include desktop1300 {
-                height: 450px; 
-            }
 
             @include desktop1066 {
                 height: 350px;
             }
-
-            @include table723 {
-                width: 90%;
-                border-radius: 10px;
-                height: 250px;
-                margin: 1px;;   
-            }
-
-            @include movile480 {
-                width: 90%;
-                height: 200px;
-                flex-direction: column;
-                margin: 1px;
-            }
-
-        }
-
-        .img-item{
-            width: 49%;
-            border-radius: 10px;
-            height: 500px;
             
-            @include desktop1300 {
-                height: 450px; 
-            }
 
-            @include desktop1066 {
-                height: 350px;
-            }
-
-            @include table723 {
-                width: 90%;
+            .img-item{
+                width: 100%;
                 border-radius: 10px;
-                height: 250px;
-                margin: 1px;;   
+                height: 500px;
+                
+                @include desktop1300 {
+                    height: 450px; 
+                }
+    
+                @include desktop1066 {
+                    height: 350px;
+                }
+    
+                @include table723 {
+                    width: 90%;
+                    border-radius: 10px;
+                    height: 250px;
+                    margin: 1px;;   
+                }
+    
+                @include movile480 {
+                    width: 90%;
+                    height: 200px;
+                    flex-direction: column;
+                    margin: 1px;
+                }
             }
 
-            @include movile480 {
-                width: 90%;
-                height: 200px;
-                flex-direction: column;
-                margin: 1px;
+            .img-titulo{
+                position: absolute;
+                top: 50%;
+                left: 50%; 
+                background-color: rgba(88, 197, 108, 0.289);
+                padding: 5px 10px; 
+                font-size: 46px; 
+                font-weight: bold; 
+                border-radius: 5px; 
+                transform: translate(-50%,-50%);
             }
         }
+
+       
     }
 }

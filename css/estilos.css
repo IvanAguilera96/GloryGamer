@@ -44,6 +44,7 @@ header section h1 {
   margin-left: 15vh;
   text-decoration: underline;
   color: rgb(10, 219, 114);
+  overflow-x: hidden;
 }
 @media screen and (max-width: 1020px) {
   header section h1 {
@@ -75,6 +76,7 @@ header section .div_header .barra {
   font-size: 20px;
   border-radius: 10px;
   border: 2px rgb(10, 219, 114) solid;
+  overflow: hidden;
 }
 @media screen and (max-width: 1020px) {
   header section .div_header .barra {
@@ -231,6 +233,9 @@ footer .contenedor-footer .footer-div .columna2-3 .flex-item a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
+footer .contenedor-footer .footer-div .columna2-3 .flex-item a:hover {
+  color: rgb(10, 219, 114);
+}
 footer .contenedor-footer .footer-div {
   width: 320px;
   font-size: 25px;
@@ -270,6 +275,9 @@ footer .contenedor-footer .footer-div .columna2-3 .flex-title {
 }
 footer .contenedor-footer .footer-div .columna2-3 .flex-item {
   padding: 5px 0;
+}
+footer .contenedor-footer .footer-div .columna2-3 .flex-item:hover {
+  color: rgb(10, 219, 114);
 }
 @media screen and (max-width: 480px) {
   footer .contenedor-footer .footer-div .columna2-3 .flex-item {
@@ -364,23 +372,33 @@ main .img2 {
     align-items: center;
   }
 }
-main .img2 .img-item {
+main .img2 .conteiner-img {
+  position: relative;
   width: 49%;
+  height: 500px;
+}
+@media screen and (max-width: 1066px) {
+  main .img2 .conteiner-img {
+    height: 350px;
+  }
+}
+main .img2 .conteiner-img .img-item {
+  width: 100%;
   border-radius: 10px;
   height: 500px;
 }
 @media screen and (max-width: 1300px) {
-  main .img2 .img-item {
+  main .img2 .conteiner-img .img-item {
     height: 450px;
   }
 }
 @media screen and (max-width: 1066px) {
-  main .img2 .img-item {
+  main .img2 .conteiner-img .img-item {
     height: 350px;
   }
 }
 @media screen and (max-width: 723px) {
-  main .img2 .img-item {
+  main .img2 .conteiner-img .img-item {
     width: 90%;
     border-radius: 10px;
     height: 250px;
@@ -388,30 +406,51 @@ main .img2 .img-item {
   }
 }
 @media screen and (max-width: 480px) {
-  main .img2 .img-item {
+  main .img2 .conteiner-img .img-item {
     width: 90%;
     height: 200px;
     flex-direction: column;
     margin: 1px;
   }
 }
-main .img2 .img-item {
+main .img2 .conteiner-img .img-titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(190, 228, 197, 0.7);
+  padding: 5px 10px;
+  font-size: 46px;
+  font-weight: bold;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+}
+main .img2 .conteiner-img {
+  position: relative;
   width: 49%;
+  height: 500px;
+}
+@media screen and (max-width: 1066px) {
+  main .img2 .conteiner-img {
+    height: 350px;
+  }
+}
+main .img2 .conteiner-img .img-item {
+  width: 100%;
   border-radius: 10px;
   height: 500px;
 }
 @media screen and (max-width: 1300px) {
-  main .img2 .img-item {
+  main .img2 .conteiner-img .img-item {
     height: 450px;
   }
 }
 @media screen and (max-width: 1066px) {
-  main .img2 .img-item {
+  main .img2 .conteiner-img .img-item {
     height: 350px;
   }
 }
 @media screen and (max-width: 723px) {
-  main .img2 .img-item {
+  main .img2 .conteiner-img .img-item {
     width: 90%;
     border-radius: 10px;
     height: 250px;
@@ -419,12 +458,23 @@ main .img2 .img-item {
   }
 }
 @media screen and (max-width: 480px) {
-  main .img2 .img-item {
+  main .img2 .conteiner-img .img-item {
     width: 90%;
     height: 200px;
     flex-direction: column;
     margin: 1px;
   }
+}
+main .img2 .conteiner-img .img-titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(88, 197, 108, 0.289);
+  padding: 5px 10px;
+  font-size: 46px;
+  font-weight: bold;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
 }
 
 main .main-contenedor {
