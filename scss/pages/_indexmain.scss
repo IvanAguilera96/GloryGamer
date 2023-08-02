@@ -22,7 +22,7 @@ main{
 
             @include movile480 {
                 width: 100%;
-                height: 200px;
+                height: 220px;
             }
         }
     }
@@ -69,6 +69,14 @@ main{
             @include desktop1066 {
                 height: 350px;
             }
+
+            @include table768 {
+                     height: 100%;
+            }
+            
+            @include table723{
+                width: 90%;
+            }
             
 
             .img-item{
@@ -84,18 +92,14 @@ main{
                     height: 350px;
                 }
     
-                @include table723 {
-                    width: 90%;
-                    border-radius: 10px;
-                    height: 250px;
-                    margin: 1px;;   
+                @include table768 {
+                    height: 300px;
+                    margin: 1px; 
                 }
     
                 @include movile480 {
-                    width: 90%;
-                    height: 200px;
-                    flex-direction: column;
-                    margin: 1px;
+                    height: 250px;
+                    
                 }
     
             }
@@ -110,9 +114,27 @@ main{
                 font-weight: bold; 
                 border-radius: 5px; 
                 transform: translate(-50%,-50%);
+
+                @include desktop1066 {
+                    font-size: 40px;
+                }
+    
+                @include table768 {
+                    font-size: 36px;
+                }
+    
+                @include movile480 {
+                    font-size: 28px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: rgb(191, 203, 195);
+                }
+                
             }
         }
-        
+
         .conteiner-img{
             position: relative;
             width: 49%;
@@ -121,8 +143,15 @@ main{
             @include desktop1066 {
                 height: 350px;
             }
-            
 
+            @include table768 {
+                     height: 100%;
+            }
+            
+            @include table723{
+                width: 90%;
+            }
+            
             .img-item{
                 width: 100%;
                 border-radius: 10px;
@@ -136,31 +165,44 @@ main{
                     height: 350px;
                 }
     
-                @include table723 {
-                    width: 90%;
-                    border-radius: 10px;
-                    height: 250px;
-                    margin: 1px;;   
+                @include table768 {
+                    height: 300px;
+                    margin: 1px; 
                 }
     
                 @include movile480 {
-                    width: 90%;
-                    height: 200px;
-                    flex-direction: column;
-                    margin: 1px;
+                    height: 250px;
+                    
                 }
-            }
+            } 
 
             .img-titulo{
                 position: absolute;
                 top: 50%;
                 left: 50%; 
-                background-color: rgba(88, 197, 108, 0.289);
+                background-color: rgba(44, 151, 82, 0.586);
                 padding: 5px 10px; 
                 font-size: 46px; 
                 font-weight: bold; 
                 border-radius: 5px; 
                 transform: translate(-50%,-50%);
+
+                @include desktop1066 {
+                font-size: 40px;
+                }
+
+               @include table768 {
+                font-size: 36px;
+                }
+
+               @include movile480 {
+                font-size: 28px;
+               }
+
+               a{
+                text-decoration: none;
+                color: rgb(191, 203, 195);
+               }
             }
         }
 

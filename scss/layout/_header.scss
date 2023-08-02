@@ -11,7 +11,7 @@ header{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: baseline;
 
         @include desktop1020 {
@@ -19,7 +19,7 @@ header{
         }
 
          h1{
-            width: 60vh;
+            width: 55vh;
             font-size: 70px;
             padding: 20px;
             margin-left: 15vh;
