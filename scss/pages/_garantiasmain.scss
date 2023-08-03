@@ -4,21 +4,9 @@
 .main-garantia{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif; 
-    background-image: url(../assets/images/redes/luigi1.jpg);
-    background-size: auto;
-    background-position: center center;
-    background-repeat: no-repeat;
     color: rgb(30, 172, 56);
     background-color: black;
 
-    @include desktop1020 {
-        background-image: url(../assets/images/redes/luigi2.jpg);
-        
-    }
-
-    @include movile480 {
-        background-image: url(../assets/images/redes/luig3.jpg);
-    }
 
     .title-garantia{
         font-size: 40px;
@@ -28,26 +16,56 @@
         
     }
 
-    .ul-garantia{
-        max-width: 95%;
-        margin-left: 40px;
-        padding: 20px 30px;
-        margin-top: 30px;
-        background-color: rgba(0, 0, 0, 0.7);
-        margin: auto;
-        
-        .text-garantia{
-            list-style-type: circle;
-            font-size: 19px;
-            text-align: justify;
-            padding: 5px 0;
-
-            @include desktop1020 {
-                
-                font-size: 15px;
+    .conteiner-garantia{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      
+      
+        .ul-garantia{
+            width: 95%;
+            margin-left: 15px;
+            margin: auto;
+            padding: 10px 30px;
+            
+            .text-garantia{
+                list-style-type: circle;
+                font-size: 19px;
                 text-align: justify;
-                padding: 5px 0;
+                
+                @include desktop1020 {
+                    padding: 5px 0;
+                    font-size: 17px;
+                }
+
             }
         }
+
+        .img-garantia{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 20px 10px;
+    
+            img{
+                width: 400px;
+                height: 300px;
+                padding: 10px;
+                border-radius: 30px;
+
+                @media (min-width:530px) and (max-width:820px) {
+                    width: 500px;
+                    height: 400px;
+                }
+
+                &:hover{
+                    transform: scale(1.1);
+                    background-color: $color-violet;
+                }
+            }
+        
+        }
+
     }
+  
 }

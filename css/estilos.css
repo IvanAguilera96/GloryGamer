@@ -12,7 +12,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 0.1fr 2fr 0.2fr;
   grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
-  background-color: rgb(19, 78, 60);
+  background-color: rgb(4, 9, 6);
 }
 @media screen and (max-width: 1300px) {
   body {
@@ -21,7 +21,6 @@ body {
 }
 
 header {
-  background-color: rgb(19, 78, 60);
   grid-area: header;
   background-color: rgb(4, 9, 6);
 }
@@ -100,7 +99,6 @@ footer {
 }
 footer .contenedor-footer {
   display: flex;
-  background-color: rgb(19, 78, 60);
   background-color: rgb(4, 9, 6);
   flex-direction: row;
   flex-wrap: wrap;
@@ -683,22 +681,8 @@ main .main-contenedor .grid-item .grid-img {
 .main-garantia {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(../assets/images/redes/luigi1.jpg);
-  background-size: auto;
-  background-position: center center;
-  background-repeat: no-repeat;
   color: rgb(30, 172, 56);
   background-color: black;
-}
-@media screen and (max-width: 1020px) {
-  .main-garantia {
-    background-image: url(../assets/images/redes/luigi2.jpg);
-  }
-}
-@media screen and (max-width: 480px) {
-  .main-garantia {
-    background-image: url(../assets/images/redes/luig3.jpg);
-  }
 }
 .main-garantia .title-garantia {
   font-size: 40px;
@@ -706,26 +690,49 @@ main .main-contenedor .grid-item .grid-img {
   text-decoration: underline;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.main-garantia .ul-garantia {
-  max-width: 95%;
-  margin-left: 40px;
-  padding: 20px 30px;
-  margin-top: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
-  margin: auto;
+.main-garantia .conteiner-garantia {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-.main-garantia .ul-garantia .text-garantia {
+.main-garantia .conteiner-garantia .ul-garantia {
+  width: 95%;
+  margin-left: 15px;
+  margin: auto;
+  padding: 10px 30px;
+}
+.main-garantia .conteiner-garantia .ul-garantia .text-garantia {
   list-style-type: circle;
   font-size: 19px;
   text-align: justify;
-  padding: 5px 0;
 }
 @media screen and (max-width: 1020px) {
-  .main-garantia .ul-garantia .text-garantia {
-    font-size: 15px;
-    text-align: justify;
+  .main-garantia .conteiner-garantia .ul-garantia .text-garantia {
     padding: 5px 0;
+    font-size: 17px;
   }
+}
+.main-garantia .conteiner-garantia .img-garantia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px 10px;
+}
+.main-garantia .conteiner-garantia .img-garantia img {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 30px;
+}
+@media (min-width: 530px) and (max-width: 820px) {
+  .main-garantia .conteiner-garantia .img-garantia img {
+    width: 500px;
+    height: 400px;
+  }
+}
+.main-garantia .conteiner-garantia .img-garantia img:hover {
+  transform: scale(1.1);
+  background-color: rgb(107, 66, 195);
 }
 
 .conteiner-nosotros {

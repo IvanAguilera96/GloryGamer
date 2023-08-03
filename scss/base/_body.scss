@@ -8,7 +8,7 @@ body{
     "main main main main"
     "footer footer footer footer"
     ;
-    background-color: rgb(19, 78, 60);
+    background-color: $color-fondo;
 
     @include desktop1300 {
         display: block;

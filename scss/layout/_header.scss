@@ -3,7 +3,6 @@
 
 
 header{
-    background-color: rgb(19, 78, 60);
     grid-area: header;
     background-color: $color-fondo;
     
@@ -68,7 +67,7 @@ header{
     }
     nav{  
 
-       a{
+        a{
             color: black;
             color:$color-violet !important;
             text-decoration: none;
