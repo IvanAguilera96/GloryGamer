@@ -86,10 +86,12 @@ header nav a {
   color: black;
   color: rgb(107, 66, 195) !important;
   text-decoration: none;
+  border-radius: 20px;
 }
 header nav a:hover {
-  transform: scale(1.2);
-  background-color: rgb(13, 21, 11);
+  transform: scale(1.4);
+  background-color: rgb(0, 255, 149);
+  transition: 0.3s;
   border-radius: 20px;
   color: black;
 }
@@ -721,7 +723,7 @@ main .main-contenedor .grid-item .grid-img {
 .main-garantia .conteiner-garantia .img-garantia img {
   width: 400px;
   height: 300px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 30px;
 }
 @media (min-width: 530px) and (max-width: 820px) {
@@ -759,10 +761,8 @@ main .main-contenedor .grid-item .grid-img {
 }
 @media screen and (max-width: 1020px) {
   .conteiner-nosotros .nosotros {
-    padding: 5px;
     max-width: 85%;
-    font-size: 15px;
-    color: rgb(10, 219, 114);
+    font-size: 18px;
   }
 }
 
@@ -771,14 +771,14 @@ main .main-contenedor .grid-item .grid-img {
   color: black;
 }
 .body-contacto .main-contacto {
-  width: 80%;
+  width: 75%;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 20px;
   background-color: #181a1b;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.8fr 1fr;
+  grid-template-rows: 0.8fr 0.8fr;
   grid-template-areas: "section-mapa section-mapa" "section-contacto section-form";
   border: 2px solid rgb(4, 9, 6);
   padding: 10px 40px;
@@ -911,6 +911,18 @@ main .main-contenedor .grid-item .grid-img {
 }
 .body-contacto .main-contacto .section-form {
   grid-area: section-form;
+  width: 100%;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .body-contacto .main-contacto .section-form {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .body-contacto .main-contacto .section-form {
+    width: 100%;
+  }
 }
 .body-contacto .main-contacto .section-form .contacto-form {
   width: 100%;

@@ -65,18 +65,24 @@ header{
             
         }
     }
+
     nav{  
 
         a{
             color: black;
             color:$color-violet !important;
             text-decoration: none;
+            border-radius: 20px;
+            
+            
             
          &:hover{
-                transform: scale(1.2);
-                background-color: rgb(13, 21, 11);
+                transform: scale(1.4);
+                background-color: rgb(0, 255, 149);
+                transition:  0.3s;
                 border-radius: 20px;
                 color: black;
+                
                 
             }
         }

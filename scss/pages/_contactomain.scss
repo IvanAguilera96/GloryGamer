@@ -5,14 +5,14 @@
     color: black;
 
     .main-contacto{
-        width: 80%;
+        width: 75%;
         margin: auto;
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #181a1b;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: .8fr 1fr;
+        grid-template-rows: .8fr .8fr;
         grid-template-areas: 
         "section-mapa section-mapa"
         "section-contacto section-form"
@@ -158,6 +158,16 @@
 
         .section-form{
             grid-area: section-form;
+            width: 100%;
+            margin: auto;
+
+            @include table768 {
+                width: 90%;
+            }
+
+            @include movile480 {
+                width: 100%;
+            }
 
             .contacto-form{
                 width: 100%;
