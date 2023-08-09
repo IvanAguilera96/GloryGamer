@@ -104,6 +104,7 @@ footer .contenedor-footer {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
+  align-items: baseline;
 }
 @media screen and (max-width: 1300px) {
   footer .contenedor-footer {
@@ -150,28 +151,18 @@ footer .contenedor-footer .footer-div {
     font-size: 20px;
   }
 }
-footer .contenedor-footer .footer-div h3 {
-  text-decoration: underline;
-  font-weight: bold;
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: rgb(10, 219, 114);
+footer .contenedor-footer .footer-div .logo-footer img {
+  height: 60px;
 }
-@media screen and (max-width: 1300px) {
-  footer .contenedor-footer .footer-div h3 {
-    margin-bottom: 5px;
-  }
-}
-@media screen and (max-width: 480px) {
-  footer .contenedor-footer .footer-div h3 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 0;
+@media screen and (max-width: 768px) {
+  footer .contenedor-footer .footer-div .logo-footer {
+    height: 50px;
   }
 }
 footer .contenedor-footer .footer-div p {
   font-size: 20px;
   color: rgb(255, 255, 255);
+  text-align: justify;
 }
 @media screen and (max-width: 1300px) {
   footer .contenedor-footer .footer-div p {
@@ -294,6 +285,7 @@ footer .contenedor-footer .footer-div .flex-title {
   font-size: 40px;
   font-weight: bold;
   color: rgb(10, 219, 114);
+  text-align: center;
 }
 @media screen and (max-width: 1300px) {
   footer .contenedor-footer .footer-div .flex-title {
