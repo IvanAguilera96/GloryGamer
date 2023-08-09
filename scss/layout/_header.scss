@@ -12,38 +12,33 @@ header{
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: baseline;
+        padding: 30px;
 
         @include desktop1020 {
             justify-content: center;
         }
 
-         h1{
-            width: 55vh;
-            font-size: 70px;
-            padding: 20px;
-            margin-left: 15vh;
-            text-decoration: underline;
-            color: $color-green;
-            overflow-x: hidden;
+        div{
             
+            .logo{
+                height: 120px;
+                
+                @include desktop1020 {
+                    height: 90px;
+                    margin-right: 15px;
+                }
 
-            @include desktop1020 {
-                font-size: 60px;
-                padding: 10px 0px;
-                margin-left: 0;
-                text-align: center; 
+                @include table768 {
+                    height: 70px;
+                    margin-right: 0;
+                    
+                }
             }
-
-            @include table768 {
-                font-size: 60px;
-                padding: 10px 0px;
-                margin-left: 0;
-                text-align: center;
-            }
-            
         }
+
         .div_header{
             margin-right: 80px;
+            margin-left: 15px;
 
             @include desktop1020 {
                 margin-right: 0px; 
@@ -53,9 +48,10 @@ header{
                 color: $color-violet; 
                 background-color: black;
                 font-size: 20px;
-                border-radius: 10px;
+                border-radius: 15px;
                 border: 2px $color-green solid;
                 overflow: hidden;
+                padding: 5px;
 
                 @include desktop1020 {
                     font-size: 15px;
