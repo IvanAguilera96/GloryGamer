@@ -2,156 +2,126 @@
 
 main{
 
-    .main-contenedor{
-        display: grid;
-        width: 100%;
-        background-color: #181a1b;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(9, 1fr);
-        justify-content: center;
-        align-items: center;
+    .conteiner-card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
 
-        @include desktop1200{
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: repeat(18, 1fr);
+        @include desktop1066{
+            flex-wrap: wrap;
         }
 
-        @include table768 {
-            display: block;
-            grid-template-columns: none;
-            grid-template-rows: none;
-            justify-content:none;
-            align-items:none;
+        @include table723 {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
 
-        .grid-productos{
-            height: 400px;
+        .title-producto{
             width: 300px;
-            margin: 30px auto;
             text-align: center;
-            line-height: 300px; 
+            line-height: 400px; 
             font-size: 30px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: rgb(10, 219, 114);
 
-            @include desktop1200{
-                margin: 0 auto;
-                font-size: 35px;
-                grid-column: 1/4;   
-            }
-
-            @include table768 {
-                height: 200px;
-                width: 100%;
-                margin: auto;
-                line-height: 200px; 
-                font-size: 25px;
-            }
+            @include desktop1066{
+                line-height: 150px; 
+                font-size: 30px;
+                flex-basis: 100%;
+            }  
         }
 
-        #procesador{
-            height: 400px;
+        #procesadores{
             width: 300px;
-            margin: 30px auto;
             text-align: center;
-            line-height: 300px; 
+            line-height: 400px; 
             font-size: 30px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: rgb(10, 219, 114);
 
-            @include desktop1200{
-                margin: 0 auto;
-                font-size: 35px;
-                grid-column: 1/4;   
-            }
-
-            @include table768 {
-                height: 200px;
-                width: 100%;
-                margin: auto;
-                line-height: 200px; 
-                font-size: 25px;
+            @include desktop1066{
+                line-height: 150px; 
+                font-size: 30px;
+                flex-basis: 100%;
             }
         }
-        
+
         #placas{
-            height: 400px;
             width: 300px;
-            margin: 30px auto;
             text-align: center;
-            line-height: 300px; 
+            line-height: 400px; 
             font-size: 30px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: rgb(10, 219, 114);
 
-            @include desktop1200{
-                margin: 0 auto;
-                font-size: 35px;
-                grid-column: 1/4;   
-            }
-
-            @include table768 {
-                height: 200px;
-                width: 100%;
-                margin: auto;
-                line-height: 200px; 
-                font-size: 25px;
+            @include desktop1066{
+                line-height: 150px; 
+                font-size: 30px;
+                flex-basis: 100%;
             }
         }
 
         #monitores{
-            height: 400px;
             width: 300px;
-            margin: 30px auto;
             text-align: center;
-            line-height: 300px; 
+            line-height: 400px; 
             font-size: 30px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: rgb(10, 219, 114);
 
-            @include desktop1200{
-                margin: 0 auto;
-                font-size: 35px;
-                grid-column: 1/4;   
-            }
-
-            @include table768 {
-                height: 200px;
-                width: 100%;
-                margin: auto;
-                line-height: 200px; 
-                font-size: 25px;
+            @include desktop1066{
+                line-height: 150px; 
+                font-size: 30px;
+                flex-basis: 100%;
             }
         }
 
-        .grid-item{
+        .card {
+            border-radius: 5px;
+            padding: 10px;
+            width: 300px;
+            margin: 20px;
+            box-shadow: 0 2px 4px rgb(36, 231, 95);
+            text-align: center;
+            background-color: rgb(255, 255, 255);
 
-            @include desktop1200{
-                text-align: center;
+            &:hover{
+                border: 5px solid $color-violet;
+                transform: scale(1.1);
+                border-radius: 5px;
             }
 
-            @include table768 {
-                text-align: center;
+            @include desktop1066{
+                border: 3px solid $color-violet;
+                width: 210px;
+                margin: 20px;
             }
 
-            .grid-img{
-                height: 400px;
+            @include table723{
                 width: 300px;
-    
-                @include desktop1200{
-                    height: 350px;
-                    width: 250px;
+            }
+
+            .text{
+                color: #000000;
+                font-size: 16px;
+                font-weight: bold;
+
+                @include desktop1066{
+                    font-size: 15px;
                 }
 
-                @include table768 {
-                    height: 300px;
-                    width: 200px;
+                @include table723{
+                    font-size: 16px;
                 }
-       
+            }
+            
+            .precio {
+                color: #059964;
+                font-weight: bold;
+                font-size: 18px;
             }
         }
-        
-        
-    }    
-
+    }
 }
