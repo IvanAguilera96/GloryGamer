@@ -80,6 +80,7 @@ header nav a {
   color: rgb(107, 66, 195) !important;
   text-decoration: none;
   border-radius: 20px;
+  transition: all 0.6s ease;
 }
 header nav a:hover {
   transform: scale(1.3);
@@ -163,6 +164,7 @@ footer .contenedor-footer .footer-div p {
   font-size: 20px;
   color: rgb(255, 255, 255);
   text-align: justify;
+  padding-top: 10px;
 }
 @media screen and (max-width: 1300px) {
   footer .contenedor-footer .footer-div p {
@@ -602,6 +604,7 @@ main .conteiner-card .card {
   box-shadow: 0 2px 4px rgb(36, 231, 95);
   text-align: center;
   background-color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
 }
 main .conteiner-card .card:hover {
   border: 5px solid rgb(107, 66, 195);
