@@ -523,6 +523,7 @@ main .conteiner-card {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
+  align-items: center;
 }
 @media screen and (max-width: 1066px) {
   main .conteiner-card {
@@ -536,7 +537,7 @@ main .conteiner-card {
     align-items: center;
   }
 }
-main .conteiner-card .title-producto {
+main .conteiner-card #notes {
   width: 300px;
   text-align: center;
   line-height: 400px;
@@ -545,7 +546,7 @@ main .conteiner-card .title-producto {
   color: rgb(10, 219, 114);
 }
 @media screen and (max-width: 1066px) {
-  main .conteiner-card .title-producto {
+  main .conteiner-card #notes {
     line-height: 150px;
     font-size: 30px;
     flex-basis: 100%;
@@ -566,6 +567,21 @@ main .conteiner-card #procesadores {
     flex-basis: 100%;
   }
 }
+main .conteiner-card #mother {
+  width: 300px;
+  text-align: center;
+  line-height: 400px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(10, 219, 114);
+}
+@media screen and (max-width: 1066px) {
+  main .conteiner-card #mother {
+    line-height: 150px;
+    font-size: 30px;
+    flex-basis: 100%;
+  }
+}
 main .conteiner-card #placas {
   width: 300px;
   text-align: center;
@@ -576,6 +592,66 @@ main .conteiner-card #placas {
 }
 @media screen and (max-width: 1066px) {
   main .conteiner-card #placas {
+    line-height: 150px;
+    font-size: 30px;
+    flex-basis: 100%;
+  }
+}
+main .conteiner-card #ram {
+  width: 300px;
+  text-align: center;
+  line-height: 400px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(10, 219, 114);
+}
+@media screen and (max-width: 1066px) {
+  main .conteiner-card #ram {
+    line-height: 150px;
+    font-size: 30px;
+    flex-basis: 100%;
+  }
+}
+main .conteiner-card #almacenamiento {
+  width: 300px;
+  text-align: center;
+  line-height: 400px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(10, 219, 114);
+}
+@media screen and (max-width: 1066px) {
+  main .conteiner-card #almacenamiento {
+    line-height: 150px;
+    font-size: 30px;
+    flex-basis: 100%;
+  }
+}
+main .conteiner-card #gabinetes {
+  width: 300px;
+  text-align: center;
+  line-height: 400px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(10, 219, 114);
+}
+@media screen and (max-width: 1066px) {
+  main .conteiner-card #gabinetes {
+    line-height: 150px;
+    font-size: 30px;
+    flex-basis: 100%;
+  }
+}
+main .conteiner-card #fuentes {
+  width: 300px;
+  text-align: center;
+  line-height: 400px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(10, 219, 114);
+}
+@media screen and (max-width: 1066px) {
+  main .conteiner-card #fuentes {
     line-height: 150px;
     font-size: 30px;
     flex-basis: 100%;
@@ -703,6 +779,8 @@ main .conteiner-card .card .precio {
 
 .conteiner-nosotros {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   background-image: url(../assets/images/redes/alien1500px.jpg);

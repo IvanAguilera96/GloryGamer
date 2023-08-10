@@ -91,7 +91,7 @@
                 padding:20px;
                 font-size: 30px;
                 border: 1px solid $color-violet ;
-                color: rgb(10, 219, 114);
+                color: $color-green;
 
                 @include desktop1066 {
                     padding:15px; 
@@ -115,7 +115,7 @@
                     font-size: 25px;
                     padding: 10px;
                     text-decoration: underline;
-                    color: rgb(10, 219, 114);
+                    color: $color-green;
 
                     @include desktop1066 {
                         padding: 5px; 
@@ -139,7 +139,7 @@
                     text-align: center;
                     padding: 5px;
                     font-size: 20px;
-                    color: rgb(10, 219, 114);
+                    color: $color-green;
 
                     @include table768 {
                         padding: 3px;

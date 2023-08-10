@@ -1,4 +1,15 @@
 
+@mixin flexbox( $dis , $direction , $wp , $just , $align){
+    display : $dis;
+    flex-direction: $direction;
+    flex-wrap: $wp;
+    justify-content: $just;
+    align-items: $align;
+}
+
+
+
+
 @mixin desktop1300 {
     @media screen and (max-width: 1300px) {
         @content;
@@ -42,4 +53,14 @@
     @media screen and (max-width: 480px) {
         @content;
     }
+}
+
+
+@mixin title-productos{
+    width: 300px;
+    text-align: center;
+    line-height: 400px; 
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color-green;
 }

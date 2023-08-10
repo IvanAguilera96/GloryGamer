@@ -3,11 +3,8 @@
 main{
 
     .conteiner-card{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-
+        @include flexbox(flex,row,nowrap,space-around,center);
+        
         @include desktop1066{
             flex-wrap: wrap;
         }
@@ -18,28 +15,28 @@ main{
           align-items: center;
         }
 
-        .title-producto{
-            width: 300px;
-            text-align: center;
-            line-height: 400px; 
-            font-size: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(10, 219, 114);
+        #notes{
+            @include title-productos;
 
             @include desktop1066{
                 line-height: 150px; 
                 font-size: 30px;
                 flex-basis: 100%;
-            }  
+            }
         }
 
         #procesadores{
-            width: 300px;
-            text-align: center;
-            line-height: 400px; 
-            font-size: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(10, 219, 114);
+            @include title-productos;
+
+            @include desktop1066{
+                line-height: 150px; 
+                font-size: 30px;
+                flex-basis: 100%;
+            }
+        }
+
+        #mother{
+            @include title-productos;
 
             @include desktop1066{
                 line-height: 150px; 
@@ -49,12 +46,47 @@ main{
         }
 
         #placas{
-            width: 300px;
-            text-align: center;
-            line-height: 400px; 
-            font-size: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(10, 219, 114);
+            @include title-productos;
+
+            @include desktop1066{
+                line-height: 150px; 
+                font-size: 30px;
+                flex-basis: 100%;
+            }
+        }
+
+        #ram{
+            @include title-productos;
+
+            @include desktop1066{
+                line-height: 150px; 
+                font-size: 30px;
+                flex-basis: 100%;
+            }
+        }
+
+        #almacenamiento{
+            @include title-productos;
+
+            @include desktop1066{
+                line-height: 150px; 
+                font-size: 30px;
+                flex-basis: 100%;
+            }
+        }
+
+        #gabinetes{
+            @include title-productos;
+
+            @include desktop1066{
+                line-height: 150px; 
+                font-size: 30px;
+                flex-basis: 100%;
+            }
+        }
+
+        #fuentes{
+            @include title-productos;
 
             @include desktop1066{
                 line-height: 150px; 
@@ -64,12 +96,7 @@ main{
         }
 
         #monitores{
-            width: 300px;
-            text-align: center;
-            line-height: 400px; 
-            font-size: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(10, 219, 114);
+            @include title-productos;
 
             @include desktop1066{
                 line-height: 150px; 
