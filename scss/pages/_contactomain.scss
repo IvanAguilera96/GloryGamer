@@ -11,18 +11,19 @@
         margin-bottom: 20px;
         background-color: #181a1b;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: .8fr .8fr;
+        grid-template-columns: 1fr 0.1fr 1fr;
+        grid-template-rows: .8fr 1.6fr;
         grid-template-areas: 
-        "section-mapa section-mapa"
-        "section-contacto section-form"
+        "section-mapa section-mapa section-mapa"
+        "section-contacto . section-form"
         ;
         border: 2px solid $color-fondo;
         padding: 10px 40px;
+        box-shadow: 0 2px 4px rgb(245, 245, 245);
 
         @include desktop1066 {
             grid-template-columns: 1fr 5fr 1fr;
-            grid-template-rows: .7fr .7fr .3fr;
+            grid-template-rows: .7fr .5fr 1.5fr;
             grid-template-areas: 
             "section-mapa section-mapa section-mapa"
             ". section-contacto ."
@@ -52,6 +53,7 @@
         
         .section-mapa{
             grid-area: section-mapa;
+            margin-bottom: 10px;
 
             div{
 
@@ -67,10 +69,12 @@
         }
 
         .section-contacto{
+            @include flexbox( flex , column , nowrap , space-around , center);
             grid-area: section-contacto;
             padding: 25px;
             border: 1px solid $color-violet;
             width: 100%;
+            
 
             @include desktop1066 {
                 padding: 15px;
@@ -80,6 +84,7 @@
             @include table768 {
                 padding: 25px;
                 border: none;
+                margin-bottom: 10px;
             }
 
             @include movile480{
@@ -90,7 +95,7 @@
                 text-align: center;
                 padding:20px;
                 font-size: 30px;
-                border: 1px solid $color-violet ;
+                
                 color: $color-green;
 
                 @include desktop1066 {
@@ -172,7 +177,7 @@
             .contacto-form{
                 width: 100%;
                 text-align: center;
-                background-color:rgb(70, 67, 67);
+                background-color:$color-green;
                 margin: auto;
                 padding: 25px;
                 font-size: 20px;
@@ -206,6 +211,8 @@
                         .formlabel{
                             display: block;
                             text-align: center;
+                            padding: 5px;
+                            color: $color-fondo;
 
                             @include table768 {
                                 display: block;
@@ -217,16 +224,19 @@
                         .forminput{
                             width: 70%;
                             height: 30px;
-                            background-color:  rgb(22, 68, 53);
+                            background-color:  $color-violet;
                             font-size: 15px;
-
+                            border-radius: 10px;
+                            color: white;
+                            border: 1px solid white;
+                            
                             @include desktop1066 {
                                 width: 90%; 
                             }
 
                             @include table768 {
                                 width: 70%;
-                                height: 25px;
+                                height: 30px;
                             }
 
                             @include movile480{
@@ -261,8 +271,10 @@
 
                         .enviar{
                             height: 30px;
-                            background-color: rgb(22, 68, 53);
+                            background-color: $color-violet;
                             border: 1px solid black;
+                            
+                            
 
                             @include table768 {
                                 height: 25px;

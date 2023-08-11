@@ -736,16 +736,17 @@ main .conteiner-card .card .precio {
   margin-bottom: 20px;
   background-color: #181a1b;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.8fr 0.8fr;
-  grid-template-areas: "section-mapa section-mapa" "section-contacto section-form";
+  grid-template-columns: 1fr 0.1fr 1fr;
+  grid-template-rows: 0.8fr 1.6fr;
+  grid-template-areas: "section-mapa section-mapa section-mapa" "section-contacto . section-form";
   border: 2px solid rgb(4, 9, 6);
   padding: 10px 40px;
+  box-shadow: 0 2px 4px rgb(245, 245, 245);
 }
 @media screen and (max-width: 1066px) {
   .body-contacto .main-contacto {
     grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 0.7fr 0.7fr 0.3fr;
+    grid-template-rows: 0.7fr 0.5fr 1.5fr;
     grid-template-areas: "section-mapa section-mapa section-mapa" ". section-contacto ." ". section-form .";
   }
 }
@@ -769,6 +770,7 @@ main .conteiner-card .card .precio {
 }
 .body-contacto .main-contacto .section-mapa {
   grid-area: section-mapa;
+  margin-bottom: 10px;
 }
 .body-contacto .main-contacto .section-mapa div iframe {
   width: 100%;
@@ -780,6 +782,11 @@ main .conteiner-card .card .precio {
   }
 }
 .body-contacto .main-contacto .section-contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
   grid-area: section-contacto;
   padding: 25px;
   border: 1px solid rgb(107, 66, 195);
@@ -795,6 +802,7 @@ main .conteiner-card .card .precio {
   .body-contacto .main-contacto .section-contacto {
     padding: 25px;
     border: none;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -806,7 +814,6 @@ main .conteiner-card .card .precio {
   text-align: center;
   padding: 20px;
   font-size: 30px;
-  border: 1px solid rgb(107, 66, 195);
   color: rgb(10, 219, 114);
 }
 @media screen and (max-width: 1066px) {
@@ -886,7 +893,7 @@ main .conteiner-card .card .precio {
 .body-contacto .main-contacto .section-form .contacto-form {
   width: 100%;
   text-align: center;
-  background-color: rgb(70, 67, 67);
+  background-color: rgb(10, 219, 114);
   margin: auto;
   padding: 25px;
   font-size: 20px;
@@ -920,6 +927,8 @@ main .conteiner-card .card .precio {
 .body-contacto .main-contacto .section-form .contacto-form form div .formlabel {
   display: block;
   text-align: center;
+  padding: 5px;
+  color: rgb(4, 9, 6);
 }
 @media screen and (max-width: 768px) {
   .body-contacto .main-contacto .section-form .contacto-form form div .formlabel {
@@ -931,8 +940,11 @@ main .conteiner-card .card .precio {
 .body-contacto .main-contacto .section-form .contacto-form form div .forminput {
   width: 70%;
   height: 30px;
-  background-color: rgb(22, 68, 53);
+  background-color: rgb(107, 66, 195);
   font-size: 15px;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid white;
 }
 @media screen and (max-width: 1066px) {
   .body-contacto .main-contacto .section-form .contacto-form form div .forminput {
@@ -942,7 +954,7 @@ main .conteiner-card .card .precio {
 @media screen and (max-width: 768px) {
   .body-contacto .main-contacto .section-form .contacto-form form div .forminput {
     width: 70%;
-    height: 25px;
+    height: 30px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -977,7 +989,7 @@ main .conteiner-card .card .precio {
 }
 .body-contacto .main-contacto .section-form .contacto-form form div .enviar {
   height: 30px;
-  background-color: rgb(22, 68, 53);
+  background-color: rgb(107, 66, 195);
   border: 1px solid black;
 }
 @media screen and (max-width: 768px) {
