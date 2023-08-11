@@ -71,8 +71,7 @@
         .section-contacto{
             @include flexbox( flex , column , nowrap , space-around , center);
             grid-area: section-contacto;
-            padding: 25px;
-            border: 1px solid $color-violet;
+            box-shadow: 0 2px 4px rgb(245, 245, 245);
             width: 100%;
             
 
@@ -82,7 +81,7 @@
             }
 
             @include table768 {
-                padding: 25px;
+                padding: 10px;
                 border: none;
                 margin-bottom: 10px;
             }
@@ -95,7 +94,7 @@
                 text-align: center;
                 padding:20px;
                 font-size: 30px;
-                
+
                 color: $color-green;
 
                 @include desktop1066 {
@@ -165,9 +164,10 @@
             grid-area: section-form;
             width: 100%;
             margin: auto;
+            box-shadow: 0 2px 4px rgb(245, 245, 245);
 
             @include table768 {
-                width: 90%;
+                width: 100%;
             }
 
             @include movile480 {
@@ -177,11 +177,12 @@
             .contacto-form{
                 width: 100%;
                 text-align: center;
-                background-color:$color-green;
+                background-color: $color-green;
                 margin: auto;
-                padding: 25px;
+                padding: 20px;
                 font-size: 20px;
                 border: 7px double $color-fondo;
+
 
                 @include movile480{
                     padding: 5px;
@@ -198,10 +199,6 @@
 
                     @include table768 {
                         font-size: 30px;
-                    }
-
-                    @include movile480{
-                        font-size: 30px; 
                     }
     
                 }
@@ -235,7 +232,7 @@
                             }
 
                             @include table768 {
-                                width: 70%;
+                                width: 80%;
                                 height: 30px;
                             }
 
