@@ -600,7 +600,7 @@ main .conteiner-card .card {
   margin: 20px;
   box-shadow: 0 2px 4px rgb(36, 231, 95);
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255) !important;
   transition: all 0.3s ease;
 }
 main .conteiner-card .card:hover {
@@ -927,7 +927,7 @@ main .conteiner-card .card .precio {
   display: block;
   text-align: center;
   padding: 5px;
-  color: rgb(4, 9, 6);
+  color: rgb(4, 9, 6) !important;
 }
 @media screen and (max-width: 768px) {
   .body-contacto .main-contacto .section-form .contacto-form form div .formlabel {

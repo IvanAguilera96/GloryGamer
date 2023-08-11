@@ -209,7 +209,8 @@
                             display: block;
                             text-align: center;
                             padding: 5px;
-                            color: $color-fondo;
+                            color: $color-fondo !important;
+                            
 
                             @include table768 {
                                 display: block;
