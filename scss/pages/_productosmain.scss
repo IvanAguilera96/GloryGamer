@@ -26,7 +26,7 @@ main{
         }
 
         #procesadores{
-            @include title-productos;
+            @extend #notes;
 
             @include desktop1066{
                 line-height: 150px; 
@@ -36,7 +36,7 @@ main{
         }
 
         #mother{
-            @include title-productos;
+            @extend #notes;
 
             @include desktop1066{
                 line-height: 150px; 
@@ -46,7 +46,7 @@ main{
         }
 
         #placas{
-            @include title-productos;
+            @extend #notes;
 
             @include desktop1066{
                 line-height: 150px; 
@@ -56,7 +56,7 @@ main{
         }
 
         #ram{
-            @include title-productos;
+            @extend #notes;
 
             @include desktop1066{
                 line-height: 150px; 
@@ -66,7 +66,7 @@ main{
         }
 
         #almacenamiento{
-            @include title-productos;
+            @extend #ram;
 
             @include desktop1066{
                 line-height: 150px; 
@@ -76,7 +76,7 @@ main{
         }
 
         #gabinetes{
-            @include title-productos;
+            @extend #notes;
 
             @include desktop1066{
                 line-height: 150px; 
@@ -86,7 +86,7 @@ main{
         }
 
         #fuentes{
-            @include title-productos;
+            @extend #notes;
 
             @include desktop1066{
                 line-height: 150px; 
@@ -96,7 +96,7 @@ main{
         }
 
         #monitores{
-            @include title-productos;
+            @extend #fuentes;
 
             @include desktop1066{
                 line-height: 150px; 

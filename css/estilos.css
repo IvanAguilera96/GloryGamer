@@ -100,12 +100,11 @@ footer {
 }
 footer .contenedor-footer {
   display: flex;
-  background-color: rgb(4, 9, 6);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
   align-items: baseline;
+  background-color: rgb(4, 9, 6);
 }
 @media screen and (max-width: 1300px) {
   footer .contenedor-footer {
@@ -122,6 +121,7 @@ footer .contenedor-footer {
 }
 @media screen and (max-width: 480px) {
   footer .contenedor-footer {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -132,12 +132,11 @@ footer .contenedor-footer .footer-div {
   width: 320px;
   font-size: 25px;
   padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
   color: rgb(10, 219, 114);
+  font-family: Arial, Helvetica, sans-serif;
 }
 @media screen and (max-width: 1300px) {
   footer .contenedor-footer .footer-div {
-    width: 500px;
     font-size: 23px;
   }
 }
@@ -177,13 +176,6 @@ footer .contenedor-footer .footer-div p {
     font-size: 18px;
     text-align: center;
   }
-}
-footer .contenedor-footer .footer-div {
-  width: 320px;
-  font-size: 25px;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(10, 219, 114);
 }
 footer .contenedor-footer .footer-div .columna2-3 {
   text-align: center;
@@ -225,13 +217,6 @@ footer .contenedor-footer .footer-div .columna2-3 .flex-item a {
   color: rgb(255, 255, 255);
 }
 footer .contenedor-footer .footer-div .columna2-3 .flex-item a:hover {
-  color: rgb(10, 219, 114);
-}
-footer .contenedor-footer .footer-div {
-  width: 320px;
-  font-size: 25px;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
   color: rgb(10, 219, 114);
 }
 footer .contenedor-footer .footer-div .columna2-3 {
@@ -276,13 +261,6 @@ footer .contenedor-footer .footer-div .columna2-3 .flex-item:hover {
     text-align: center;
   }
 }
-footer .contenedor-footer .footer-div {
-  width: 320px;
-  font-size: 25px;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
 footer .contenedor-footer .footer-div .flex-title {
   font-size: 40px;
   font-weight: bold;
@@ -300,6 +278,9 @@ footer .contenedor-footer .footer-div .flex-title {
     font-weight: bold;
     text-align: center;
   }
+}
+footer .contenedor-footer .footer-div div {
+  text-align: center;
 }
 
 main {
@@ -537,7 +518,7 @@ main .conteiner-card {
     align-items: center;
   }
 }
-main .conteiner-card #notes {
+main .conteiner-card #notes, main .conteiner-card #fuentes, main .conteiner-card #monitores, main .conteiner-card #gabinetes, main .conteiner-card #ram, main .conteiner-card #almacenamiento, main .conteiner-card #placas, main .conteiner-card #mother, main .conteiner-card #procesadores {
   width: 300px;
   text-align: center;
   line-height: 400px;
@@ -546,19 +527,11 @@ main .conteiner-card #notes {
   color: rgb(10, 219, 114);
 }
 @media screen and (max-width: 1066px) {
-  main .conteiner-card #notes {
+  main .conteiner-card #notes, main .conteiner-card #fuentes, main .conteiner-card #monitores, main .conteiner-card #gabinetes, main .conteiner-card #ram, main .conteiner-card #almacenamiento, main .conteiner-card #placas, main .conteiner-card #mother, main .conteiner-card #procesadores {
     line-height: 150px;
     font-size: 30px;
     flex-basis: 100%;
   }
-}
-main .conteiner-card #procesadores {
-  width: 300px;
-  text-align: center;
-  line-height: 400px;
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(10, 219, 114);
 }
 @media screen and (max-width: 1066px) {
   main .conteiner-card #procesadores {
@@ -567,28 +540,12 @@ main .conteiner-card #procesadores {
     flex-basis: 100%;
   }
 }
-main .conteiner-card #mother {
-  width: 300px;
-  text-align: center;
-  line-height: 400px;
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(10, 219, 114);
-}
 @media screen and (max-width: 1066px) {
   main .conteiner-card #mother {
     line-height: 150px;
     font-size: 30px;
     flex-basis: 100%;
   }
-}
-main .conteiner-card #placas {
-  width: 300px;
-  text-align: center;
-  line-height: 400px;
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(10, 219, 114);
 }
 @media screen and (max-width: 1066px) {
   main .conteiner-card #placas {
@@ -597,28 +554,12 @@ main .conteiner-card #placas {
     flex-basis: 100%;
   }
 }
-main .conteiner-card #ram {
-  width: 300px;
-  text-align: center;
-  line-height: 400px;
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(10, 219, 114);
-}
 @media screen and (max-width: 1066px) {
-  main .conteiner-card #ram {
+  main .conteiner-card #ram, main .conteiner-card #almacenamiento {
     line-height: 150px;
     font-size: 30px;
     flex-basis: 100%;
   }
-}
-main .conteiner-card #almacenamiento {
-  width: 300px;
-  text-align: center;
-  line-height: 400px;
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(10, 219, 114);
 }
 @media screen and (max-width: 1066px) {
   main .conteiner-card #almacenamiento {
@@ -627,14 +568,6 @@ main .conteiner-card #almacenamiento {
     flex-basis: 100%;
   }
 }
-main .conteiner-card #gabinetes {
-  width: 300px;
-  text-align: center;
-  line-height: 400px;
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(10, 219, 114);
-}
 @media screen and (max-width: 1066px) {
   main .conteiner-card #gabinetes {
     line-height: 150px;
@@ -642,28 +575,12 @@ main .conteiner-card #gabinetes {
     flex-basis: 100%;
   }
 }
-main .conteiner-card #fuentes {
-  width: 300px;
-  text-align: center;
-  line-height: 400px;
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(10, 219, 114);
-}
 @media screen and (max-width: 1066px) {
-  main .conteiner-card #fuentes {
+  main .conteiner-card #fuentes, main .conteiner-card #monitores {
     line-height: 150px;
     font-size: 30px;
     flex-basis: 100%;
   }
-}
-main .conteiner-card #monitores {
-  width: 300px;
-  text-align: center;
-  line-height: 400px;
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(10, 219, 114);
 }
 @media screen and (max-width: 1066px) {
   main .conteiner-card #monitores {

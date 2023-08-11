@@ -1,17 +1,9 @@
-
-
-
-
 header{
     grid-area: header;
     background-color: $color-fondo;
     
     section{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: baseline;
+        @include flexbox(flex,row,wrap,space-around,baseline);
         padding: 30px;
 
         @include desktop1020 {
