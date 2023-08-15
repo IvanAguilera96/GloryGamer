@@ -131,6 +131,10 @@ main{
                 width: 300px;
             }
 
+            @include movile480{
+                width: 80%;
+            }
+
             .text{
                 color: #000000;
                 font-size: 16px;
